@@ -1,0 +1,112 @@
+body {
+  font-family: "Playfair Display SC", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.names {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 2em;
+  color: #2e0315;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  font-family: "Great Vibes", cursive;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+.and {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5em;
+  color: #d32f2f;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+.full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.background-branch {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  opacity: 1;
+}
+
+.main-content {
+  z-index: 1;
+  margin-top: 350px;
+}
+
+.countdown {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.scroll-section {
+  background-image: url("img/bg.png");
+  background-size: 428px;
+  padding: 50px 20px;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.overlay p {
+  margin: 10px 0;
+}
+
+.map {
+  margin-top: 30px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .background-branch {
+    width: 90%;
+  }
+
+  .countdown {
+    font-size: 1.2em;
+  }
+
+  .overlay {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
